@@ -1,0 +1,191 @@
+:root {
+  background: blue;
+}
+
+html {
+  max-width: 720px;
+}
+
+body {
+  background: #fff;
+}
+
+* {
+  color: red;
+}
+
+h1 {
+  color: green;
+}
+
+h1 {
+  color: brown;
+}
+.box {
+  background: #363131;
+}
+
+#user {
+  color: pink;
+}
+
+h1,
+h2#user,
+button {
+  color: green;
+  background: goldenrod;
+}
+
+.button {
+  background: red;
+  color: yellow;
+}
+
+h1.button {
+  background: blue;
+  color: royalblue;
+}
+
+/* замість дів можна писати #box чи .box що є в класі дів */
+div > p {
+  color: royalblue;
+}
+/* іменно для н1, що є у тільки у футері */
+footer > h1 {
+  background: indigo;
+}
+
+footer > .box {
+  background: indigo;
+}
+/* нащадки */
+div p.together,
+div span.together {
+  color: black;
+}
+
+.p-top {
+  background: white;
+}
+
+span + p {
+  background: green;
+}
+
+p ~ span {
+  background-color: aqua;
+}
+
+em ~ h5,
+h3,
+b > p,
+* {
+  color: yellowgreen;
+  background: #363131;
+}
+
+/* початок уроку 6 */
+
+:any-link {
+  color: red;
+}
+
+p:dir(rtl) {
+  font-family: Tahoma, sans-serif;
+}
+
+span.elements:fullscreen {
+  background-color: grey;
+  color: blue;
+}
+
+#test:target {
+  background-color: aqua;
+}
+
+.a:link {
+  color: pink;
+}
+
+.a:hover {
+  color: turquoise;
+}
+
+.card:hover {
+  background-color: royalblue;
+}
+
+.link:active {
+  color: rgb(2, 6, 235);
+}
+
+input:focus {
+  background-color: aqua;
+}
+
+.card:focus-within {
+  background-color: black;
+}
+
+.card:lang(fr) > span::after {
+  content: ' (fr)';
+}
+
+button:enabled {
+  background-color: aqua;
+}
+
+button:disabled {
+  background-color: #b1adad;
+  color: hotpink;
+}
+
+.inp:read-write {
+  background-color: slateblue;
+}
+
+.inp:read-only {
+  background-color: rgb(48, 43, 80);
+}
+
+input[type='checkbox']:checked ~ span {
+  background: #062e04;
+}
+
+.valid:valid {
+  background-color: #0bd400;
+}
+
+.valid:invalid {
+  background-color: #091b08;
+}
+
+.valid:optional {
+  background-color: #e98707;
+}
+
+.number {
+  background-color: rgb(68, 64, 64);
+}
+
+.number:focus {
+  background-color: grey;
+}
+
+.number:out-of-range {
+  background-color: aquamarine;
+  color: red;
+}
+
+.number:in-range {
+  background-color: aquamarine;
+  color: rgb(126, 137, 235);
+}
+
+.number:invalid {
+  background-color: #0bd400;
+}
+
+input:placeholder-shown ~ span {
+  background-color: antiquewhite;
+}

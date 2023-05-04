@@ -1,7 +1,41 @@
-html {
-  max-width: 720px;
+.carsd {
+  color: yellow;
+  /* writing-mode: vertical-rl; */
+  /* text-align: center; */
+  text-align: justify;
 }
 
-body {
-  background: #fff;
+.card > p:hover {
+  color: green;
+  -webkit-text-fill-color: red;
+  -webkit-text-stroke: 3px black;
+  text-decoration: line-through wavy white;
+}
+
+.card > h1:hover {
+  tab-size: 700;
+  letter-spacing: 30px;
+  color: red;
+  color: hsla(307, 100%, 28%, 1);
+  direction: rtl;
+  text-decoration: underline dotted red;
+  text-decoration-color: green;
+}
+
+* {
+  font-family: 'roboto', sans-serif;
+  font-size: xx-large;
+  font-weight: bold;
+}
+
+.test {
+  display: none;
+}
+
+.block {
+  display: block;
+  margin: auto;
+
+  background: yellow;
+  width: 110px;
 }

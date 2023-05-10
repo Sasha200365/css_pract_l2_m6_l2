@@ -14,6 +14,7 @@
 
 .header {
   padding: 24px;
+  border-bottom: 3px dashed red;
 }
 
 .divider {
@@ -57,6 +58,7 @@
 
 .footer {
   padding: 24px 0;
+  border-top: 3px dotted blue;
 }
 
 .footer_copyright {
@@ -87,6 +89,7 @@
   text-align: center;
   max-width: 585px;
   margin: 0 auto;
+  line-height: 150%;
 }
 
 .plans_card:not(:last-of-type) {
@@ -120,6 +123,7 @@
 .card-price-duration {
   font-size: 29px;
   color: #6c757d;
+  vertical-align: -14;
 }
 
 .card_description_item {
@@ -137,4 +141,50 @@
   width: 100%;
   font-size: 19px;
   padding: 9px;
+}
+
+.card {
+  border: 2px solid yellow;
+  border-radius: 5%;
+}
+
+.card:hover {
+  outline-offset: 17px;
+  outline: 8px dashed green;
+  cursor: not-allowed;
+}
+
+h1 {
+  text-shadow: 2px 2px 5px red;
+}
+
+.card {
+  box-shadow: 0px 0px 5px 5px brown;
+}
+
+.btn:hover {
+  box-shadow: 0px 0px 5px 5px brown;
+}
+
+.plans_card:nth-child(2) > .card {
+  background: red;
+  display: none;
+  visibility: hidden;
+}
+
+.hero_text {
+  background: grey;
+  max-width: 600px;
+  width: 200;
+  /* height: 200px;
+  overflow-x: overlay;
+  overflow-y: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; */
+  /* overflow-wrap: break-word; */
+  /* word-break: break-word; */
+  /* hyphens: manual; */
+  word-spacing: 20px;
+  overflow: auto;
+  resize: both;
 }

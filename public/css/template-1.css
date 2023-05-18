@@ -1,3 +1,8 @@
+:root {
+  --grey1: #212529;
+  --space24: 24px;
+}
+
 .page {
   background: #ffffff;
   padding: 0 15px;
@@ -9,11 +14,11 @@
 }
 
 .logo {
-  font-size: 24px;
+  font-size: var(--space24);
 }
 
 .header {
-  padding: 24px;
+  padding: var(--space24);
   border-bottom: 3px dashed red;
 }
 
@@ -36,6 +41,7 @@
 .nav_link:hover {
   text-decoration: underline;
   color: blue;
+  opacity: 0.5;
 }
 
 .nav_vertical > .nav_link:not(:last-child) {
@@ -44,7 +50,7 @@
 }
 
 .nav_inline > .nav_link:not(:last-child) {
-  margin-right: 24px;
+  margin-right: var(--space24);
 }
 
 .header_nav_right {
@@ -57,7 +63,7 @@
 }
 
 .footer {
-  padding: 24px 0;
+  padding: var(--space24) 0;
   border-top: 3px dotted blue;
 }
 
@@ -69,7 +75,7 @@
 }
 
 .footer_title {
-  color: #212529;
+  color: var(--grey1, #212529);
   font-size: 20px;
   display: block;
   margin-bottom: 12px;
@@ -77,14 +83,14 @@
 
 .hero_title {
   font-size: 56px;
-  color: #212529;
+  color: var(--grey1, #212529);
   font-weight: 500;
   margin-bottom: 12px;
   text-align: center;
 }
 
 .hero_text {
-  color: #212529;
+  color: var(--grey1, #212529);
   font-size: 20px;
   text-align: center;
   max-width: 585px;
@@ -93,18 +99,18 @@
 }
 
 .plans_card:not(:last-of-type) {
-  margin-right: 24px;
+  margin-right: var(--space24);
 }
 
 .card-header {
   padding: 12px;
   text-align: center;
-  font-size: 24px;
-  color: #212529;
+  font-size: var(--space24);
+  color: var(--grey1, #212529);
 }
 
 .card-body {
-  padding: 24px;
+  padding: var(--space24);
 }
 
 .card_block {
@@ -112,12 +118,12 @@
 }
 
 .card_block:not(:last-of-type) {
-  margin-bottom: 24px;
+  margin-bottom: var(--space24);
 }
 
 .card_price_amound {
   font-size: 40px;
-  color: #212529;
+  color: var(--grey1, #212529);
 }
 
 .card-price-duration {
@@ -128,7 +134,7 @@
 
 .card_description_item {
   font-size: 16px;
-  color: #212529;
+  color: var(--grey1, #212529);
   display: block;
 }
 
@@ -152,6 +158,7 @@
   outline-offset: 17px;
   outline: 8px dashed green;
   cursor: not-allowed;
+  opacity: 0.5;
 }
 
 h1 {
@@ -164,6 +171,7 @@ h1 {
 
 .btn:hover {
   box-shadow: 0px 0px 5px 5px brown;
+  opacity: 0.5;
 }
 
 .plans_card:nth-child(2) > .card {
@@ -173,9 +181,9 @@ h1 {
 }
 
 .hero_text {
-  background: grey;
+  /* background: grey;
   max-width: 600px;
-  width: 200;
+  width: 200; */
   /* height: 200px;
   overflow-x: overlay;
   overflow-y: hidden;
@@ -187,4 +195,83 @@ h1 {
   word-spacing: 20px;
   overflow: auto;
   resize: both;
+}
+
+.page {
+  /* background-image: url('/img/images.jpg');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover; */
+}
+
+.hero_text {
+  /* background-image: url('/img/images.jpg');
+  background-color: transparent; */
+  /* border: 25px; */
+  padding: 50px;
+  color: green;
+  /* background-clip: text;
+  background-origin: content-box; */
+  border-image-width: 5% 10%;
+  border-image-slice: 5% 10%;
+  border-image-source: url('/img/images.jpg');
+  /* border-image-repeat: space; */
+  border-image-outset: 90%;
+}
+
+.card_block {
+  /* list-style-type: disc; */
+  padding: 0;
+  list-style-position: inside;
+  list-style-image: radial-gradient(
+    to top left,
+    red,
+    yellow
+  );
+}
+
+.card_description_item {
+  display: list-item;
+}
+
+.table tr td {
+  border: 2px solid #343a40;
+  border-bottom-color: red;
+  border-right-color: blue;
+  empty-cells: hide;
+}
+
+.table {
+  table-layout: fixed;
+  width: 600px;
+  border-collapse: separate;
+  border-spacing: 1px;
+  caption-side: top;
+}
+
+ {
+  /* content: url('/img/images.jpg'); */
+}
+
+.nav_link::after,
+.nav_link::before {
+  content: '';
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  background-image: url('/img/images.jpg');
+}
+
+.nav_link::after {
+  margin-left: 15px;
+}
+
+.nav_link::before {
+  margin-right: 15px;
+}
+
+.calc {
+  width: 600px;
+  margin: 0;
+  margin-left: calc(50% - (600px / 2));
 }

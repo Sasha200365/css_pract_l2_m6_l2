@@ -32,10 +32,29 @@
            {{> card data=this}}
            
           </div>
-          
+                    {{/each}}
+                  </main>
+      </div>
+
+      <div class="page_block">
+        <div class="calc">
+       <table class="table">
+        <caption>Table name</caption>
+        <tbody>
+          {{#each footer}}
+          <tr>
+            {{#each links}}
+              <td>
+                {{text}}
+              </td>
+             
+            {{/each}}
+          </tr>
           {{/each}}
           
-        </main>
+         </tbody>
+       </table>
+       </div>
 
       </div>
 

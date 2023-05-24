@@ -1,15 +1,15 @@
 {{#with data}}
   <div class='card'>
-    <image class='card_photo' src='{{photo}}'></image>
-    <h2 class='card_heading'>
-      {{heading}}
+    <image class='card_img' src='{{img}}'></image>
+    <h2 class='card_title'>
+      {{title}}
     </h2>
-    <p class='card_info'>
-      {{info}}
+    <p class='card_text'>
+      {{text}}
     </p>
     <a
-      href='{{linkUrl}}'
+      href='{{href}}'
       class='button card_button'
-    >{{linkText}}</a>
+    >{{button}}</a>
   </div>
 {{/with}}

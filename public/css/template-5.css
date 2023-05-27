@@ -267,7 +267,7 @@
   color: var(--color-white);
   border-radius: var(--border-radius-s);
   font-size: var(--size-l);
-  transition: opacity 0.7s:
+  transition: opacity 0.7s;
 }
 
 .form_button:hover {
@@ -286,7 +286,7 @@
 
 .form_input {
   padding: var(--space-xm);
-  border: 1px solid #CED4DA;
+  border: 1px solid #ced4da;
   border-radius: var(--border-radius-s);
 }
 

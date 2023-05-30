@@ -281,6 +281,25 @@
   gap: var(--space-padd);
 }
 
+.new {
+  color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 47px;
+  height: 20px;
+  border-radius: var(--border-radius-s);
+  justify-content: space-between;
+  left: 760px;
+  top: 1071.05px;
+  background-color: rgba(251, 95, 95, 0.5);
+  color: var(--color-white);
+  font-weight: var(--weight-title) 700;
+  font-size: var(--size-d);
+  line-height: 100%;
+  padding: 2px 6px;
+}
+
 .art_photo {
   max-width: 400px;
   width: 100%;
